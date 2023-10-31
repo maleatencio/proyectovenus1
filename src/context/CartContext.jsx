@@ -25,11 +25,13 @@ const CartProvider = ( {children} ) => {
     } 
  
     const vaciarCarrito = () =>{
-        setCarrito([])
+        setCarrito({ product: [], total:0  })
     }
     
     
-    
+    //const totalCantidad = () => {
+      //  return carrito.reduce((total, product) => total + product.quantity, 0);
+     // };
   
    
 

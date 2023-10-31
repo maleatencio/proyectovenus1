@@ -6,14 +6,16 @@ import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
 
-    const { carrito } = useCartContext()
+  const { totalCantidad, carrito } = useCartContext()
 
-    console.log(carrito);
+  console.log(carrito);
+
+  // console.log(totalCantidad);
     return (
         <div>
          <Link to="/cart" className="material-symbols-outlined" id="shop">
   shopping_bag 
-         <Typography>{carrito.products.length}</Typography>
+         <Typography>{carrito.products.lenght}</Typography>
      </Link>
         </div>
     );
