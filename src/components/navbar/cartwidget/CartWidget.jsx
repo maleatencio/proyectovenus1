@@ -10,7 +10,7 @@ const CartWidget = () => {
 
   console.log(carrito);
 
-  console.log(totalCantidad);
+
     return (
         <div>
          <Link to="/cart" className="material-symbols-outlined" id="shop">

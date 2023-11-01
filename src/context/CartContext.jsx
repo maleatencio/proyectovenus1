@@ -40,7 +40,7 @@ const CartProvider = ( {children} ) => {
     } 
  
     const vaciarCarrito = () =>{
-        setCarrito({ product: [], total:0  })
+        setCarrito({ products: [], total:0  })
     }
     
     
