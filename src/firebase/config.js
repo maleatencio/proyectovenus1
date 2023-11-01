@@ -17,7 +17,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
- export const db = getFirestore(getApps)
+ export const db = getFirestore(app)
 
  /*product.forEach((product) => {
    addDoc(collection(db, 'products'), product).then((

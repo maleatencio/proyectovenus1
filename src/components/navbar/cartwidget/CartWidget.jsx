@@ -10,12 +10,12 @@ const CartWidget = () => {
 
   console.log(carrito);
 
-  // console.log(totalCantidad);
+  console.log(totalCantidad);
     return (
         <div>
          <Link to="/cart" className="material-symbols-outlined" id="shop">
   shopping_bag 
-         <Typography>{carrito.products.lenght}</Typography>
+         <Typography>{totalCantidad()}</Typography>
      </Link>
         </div>
     );

@@ -6,14 +6,8 @@ import { Link } from "react-router-dom";
 const Cart = () => {
     const { carrito, borrarDelCarrito, vaciarCarrito } = useCartContext()
 
-    const handleRemove = ( id, cantidad ) => {
-        console.log(cantidad);
-        if(cantidad > 0){
-            borrarDelCarrito(id)
-
-        }
     
-       }
+       
 
        const handleVaciar = () =>{
         vaciarCarrito();
@@ -44,7 +38,7 @@ const Cart = () => {
                 <TableBody> 
                 {carrito.products.map(( product, cantidad ) => (
                                     <TableRow key={product.id}>
-                                        <TableCell> <IconButton size="small" onClick={() => handleRemove(product.id)}>
+                                        <TableCell> <IconButton size="small" onClick={() => borrarDelCarrito(product.id)}>
                                        <CancelIcon fontSize="small" />  </IconButton ></TableCell>
                                         <TableCell vertical-align="center"><img style={{ width: "10%", height: "10%" }} src={product.img} alt={product.nombre} /> <Typography variant="p"> {product.nombre} </Typography></TableCell>
                                         <TableCell>{product.quantity}</TableCell>

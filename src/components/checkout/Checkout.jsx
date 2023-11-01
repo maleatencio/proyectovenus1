@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Checkout = () => {
     const [pedidoId, setPedidoId] = useState("")
-    const { carrito, borrarDelCarrito} = useCartContext(CartContext)
+    const { carrito, vaciarCarrito} = useCartContext(CartContext)
 
     const { register, handleSubmit } = useForm()
 
@@ -24,18 +24,22 @@ const Checkout = () => {
         addDoc(pedirRef, pedido)
         .then((doc) => {
             setPedidoId(doc.id);
+            vaciarCarrito()
         })
     }
 
-    if(pedidoId){
+    if(pedidoId) 
+    {
         return (
             <div className="container-checkout">
                 <h1>Muchas gracias por tu compra!</h1>
                 <p>Tu numero de pedido es: {pedidoId}</p>
             </div>
         )
+        
     }
-    
+
+   
 
 
     return (
