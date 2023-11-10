@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre":"Pantalon Jemma",
+        "categoria": "Denim",
+        "precio": 3000,
+        "img":"https://psychic.com.ar/wp-content/uploads/2023/06/4220.jpg",
+        "stock": 10
+
+    },
+    {
+        "id": 2,
+        "nombre":"Top Venus",
+        "categoria": "Tops y remeras",
+        "precio":1000,
+        "img": "https://psychic.com.ar/wp-content/uploads/2023/04/p1163-3.jpg",
+        "stock": 10
+
+    },
+    {
+        "id": 3,
+       "nombre":"Buzo oversize",
+       "categoria": "Buzos",
+
+        "precio":2000,
+        "img":"https://psychic.com.ar/wp-content/uploads/2023/05/P898.png",
+        "stock": 10
+
+    }
+]
